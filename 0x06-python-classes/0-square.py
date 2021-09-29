@@ -2,7 +2,10 @@
 """
 Define a empty class"
 """
+
+
 class Square:
     """
     Define a empty class"
     """
+    pass
