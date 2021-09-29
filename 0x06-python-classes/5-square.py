@@ -16,7 +16,7 @@ class Square:
         self.prs = self.__size
         """prints in stdout the square with the character #"""
         if self.prs == 0:
-            print("\n")
+            print("\n", end="")
         else:
             for i in range(0, self.prs):
                 for j in range(0, self.prs):
