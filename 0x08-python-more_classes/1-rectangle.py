@@ -5,6 +5,11 @@
 class Rectangle:
     """Square has a width"""
 
+    def __init__(self, width=0, height=0):
+        """width and height initialization"""
+        self.height = height
+        self.width = width
+
     @property
     def height(self):
         """to retrieve it"""
@@ -33,7 +38,3 @@ class Rectangle:
         elif value < 0:
             raise ValueError("size must be >= 0")
 
-    def __init__(self, width=0, height=0):
-        """width and height initialization"""
-        self.height = height
-        self.width = width
