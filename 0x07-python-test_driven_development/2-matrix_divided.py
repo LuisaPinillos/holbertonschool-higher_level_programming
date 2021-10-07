@@ -11,16 +11,16 @@ def matrix_divided(matrix, div):
     Div must be a integer and the lists must be
     the same lenght. If div is 0 rise error.
     """
-    row = len(matrix)
+
     lenrow = len(matrix[0])
     matrix2 = []
 
-    if type(div) is not int and type(div) is not float:
+    if isinstance(div, (int, float)) is False:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    for b in range(row):
+    for b in range(len(matrix)):
         matrix2.append([])
         for a in range(len(matrix[b])):
             if len(matrix[b]) != lenrow:
