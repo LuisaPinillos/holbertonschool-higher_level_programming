@@ -20,7 +20,7 @@ def text_indentation(text):
         elif text[i] == ":":
             print(":\n")
         else:
-            if (text[i] == " " and (text[i - 1] in ".?:"
-                                    or text[i - 1] == " ")):
+            if (text[i] == " " and (text[i - 1]
+                                    in ".?:" or text[i - 1] == " ")):
                 continue
             print("{}".format(text[i]), end="")
