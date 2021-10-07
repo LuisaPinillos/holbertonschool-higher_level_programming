@@ -10,106 +10,45 @@ Import the add_integer module:
 
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-Test cases:
+>>> matrix = [
+... [9, 8, 7],
+... [6, 5, 4]
+... ]
+
+>>> matrix_divided(matrix, 9)
+[[1.0, 0.89, 0.78], [0.67, 0.56, 0.44]]
 
 >>> matrix = [
-... [1, 2, 3],
-... [4, 5, 6]
+... [9, 'k', 7],
+... [6, 5, 4]
 ... ]
->>> matrix_divided(matrix, 7)
-[[0.14, 0.29, 0.43], [0.57, 0.71, 0.86]]
 
->>> matrix = [
-... [1, 2, 3],
-... [4, "m", 6]
-... ]
->>> matrix_divided(matrix, 7)
+>>> matrix_divided(matrix, 3)
 Traceback (most recent call last):
 ...
-TypeError: matrix must be a matrix (list of lists)of integers/floats
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 >>> matrix = [
-... [1, 2, 3],
-... [4, 5, 6]
+... [9, 'k', 7],
+... [6, 5, 4]
 ... ]
+
 >>> matrix_divided(matrix, 'a')
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
 
->>> matrix = [
-... [1, 2, 3],
-... [4, 5, 6],
-... [7, 8, 9]
-... ]
->>> matrix_divided(matrix, 2)
-[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0], [3.5, 4.0, 4.5]]
+>>> matrix = [[9], [6]]
 
->>> matrix = [
-... [1, 2, 3],
-... [4, 5, 6],
-... [7, 8, "d"]
-... ]
->>> matrix_divided(matrix, 4)
-Traceback (most recent call last):
-...
-TypeError: matrix must be a matrix (list of lists)of integers/floats
-
->>> matrix = [
-... [1, 2, 3],
-... [4, 5, 6]
-... ]
->>> matrix_divided(matrix, 0)
-Traceback (most recent call last):
-...
-ZeroDivisionError: division by zero
-
->>> matrix = [
-... [1, 2],
-... [4, 5, 6]
-... ]
->>> matrix_divided(matrix, 3)
-Traceback (most recent call last):
-...
-TypeError: Each row of the matrixmust have the same size
-
->>> matrix = [
-... [1, 2, 3],
-... [4, 5, 6],
-... [7, 8, 9, 10]
-... ]
->>> matrix_divided(matrix, 5)
-Traceback (most recent call last):
-...
-TypeError: Each row of the matrixmust have the same size
-
--------------
-Requirements
--------------
-
-README Create and not empty:
-
->>> import os
->>> os.path.exists("README.md")
-True
-
-Module documentation:
+>>> matrix_divided(matrix, 6)
+[[1.5], [1.0]]
 
 >>> len(__import__('2-matrix_divided').__doc__) >= 5
 True
-
-Function documentation:
-
 >>> len(__import__('2-matrix_divided').matrix_divided.__doc__) >= 3
 True
-
-Shebang at the beginning of the file:
-
 >>> import os
 >>> os.popen('head -1 2-matrix_divided.py').read()
 '#!/usr/bin/python3\n'
-
-pycodestyle correct:
-
 >>> os.popen('pycodestyle 2-matrix_divided.py').read()
 ''
