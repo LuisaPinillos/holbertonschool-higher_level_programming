@@ -1,0 +1,59 @@
+=================================
+Function that prints name
+=================================
+
+---------------------------------
+Using function ``say_my_name``
+---------------------------------
+
+Import the add_integer module:
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test cases:
+
+>>> say_my_name("Juan", 3)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name(4, "luisa")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name(4, 5)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+-------------
+Requirements
+-------------
+
+README Create and not empty:
+
+>>> import os
+>>> os.path.exists("README.md")
+True
+
+Module documentation:
+
+>>> len(__import__('3-say_my_name').__doc__) >= 5
+True
+
+Function documentation:
+
+>>> len(__import__('3-say_my_name').say_my_name.__doc__) >= 3
+True
+
+Shebang at the beginning of the file:
+
+>>> import os
+>>> os.popen('head -1 3-say_my_name.py').read()
+'#!/usr/bin/python3\n'
+
+pycodestyle correct:
+
+>>> os.popen('pycodestyle 3-say_my_name.py').read()
+''
