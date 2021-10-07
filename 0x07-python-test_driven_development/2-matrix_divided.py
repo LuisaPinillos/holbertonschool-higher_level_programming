@@ -24,8 +24,8 @@ def matrix_divided(matrix, div):
         matrix2.append([])
         for a in range(len(matrix[b])):
             if len(matrix[b]) != lenrow:
-                raise TypeError(
-                    "Each row of the matrix must have the same size")
+                raise TypeError("Each row of the matrix "
+                                "must have the same size")
             if isinstance(matrix[b][a], (int, float)) is False:
                 raise TypeError("matrix must be a matrix (list of lists) "
                                 "of integers/floats")
