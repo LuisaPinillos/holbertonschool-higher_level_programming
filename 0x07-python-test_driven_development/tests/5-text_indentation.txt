@@ -1,9 +1,9 @@
 =================================
-Function that prints a square
+Function that prints a tex
 =================================
 
 ---------------------------------
-Using function ``print_square``
+Using function ``text_indentation``
 ---------------------------------
 
 Import the add_integer module:
