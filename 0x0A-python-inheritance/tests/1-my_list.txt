@@ -8,8 +8,6 @@ Using function ``print_sorted``
 
 Import the add_integer module:
 
->>> print_sorted = __import__('1-my_list').print_sorted
-
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 >>> my_list.append(5)
@@ -32,7 +30,7 @@ Import the add_integer module:
 >>> newlst3.append(1.5)
 >>> newlst3.print_sorted()
 [1.5, 4.5]
-new
+
 -------------
 Requirements
 -------------
@@ -50,7 +48,7 @@ True
 
 Function documentation:
 
->>> len(__import__('1-my_list').print_sorted.__doc__) >= 3
+>>> len(__import__('1-my_list').MyList.__doc__) >= 3
 True
 
 Shebang at the beginning of the file:
@@ -61,5 +59,5 @@ Shebang at the beginning of the file:
 
 pycodestyle correct:
 
->>> os.popen('pycodestyle my_list.py').read()
+>>> os.popen('pycodestyle 1-my_list.py').read()
 ''
