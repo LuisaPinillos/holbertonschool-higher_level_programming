@@ -1,0 +1,44 @@
+=================================
+Function that prints sorted
+=================================
+
+---------------------------------
+Using function ``print_sorted``
+---------------------------------
+
+Import the add_integer module:
+
+>>> print_sorted = __import__('1-my_list').print_sorted
+
+
+
+-------------
+Requirements
+-------------
+
+README Create and not empty:
+
+>>> import os
+>>> os.path.exists("README.md")
+True
+
+Module documentation:
+
+>>> len(__import__('1-my_list').__doc__) >= 5
+True
+
+Function documentation:
+
+>>> len(__import__('1-my_list').print_sorted.__doc__) >= 3
+True
+
+Shebang at the beginning of the file:
+
+>>> import os
+>>> os.popen('head -1 1-my_list.py').read()
+'#!/usr/bin/python3\n'
+
+pycodestyle correct:
+
+>>> os.popen('pycodestyle my_list.py').read()
+''
