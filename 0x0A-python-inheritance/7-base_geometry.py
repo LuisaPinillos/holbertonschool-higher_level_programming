@@ -1,13 +1,18 @@
 #!/usr/bin/python3
-"""Create a empty class"""
+"""
+Create
+a empty
+class
+"""
 
 
 class BaseGeometry():
-    """ Empty class"""
-
+    """
+    Empty class
+    """
     def area(self):
         raise Exception("area() is not implemented")
-    
+
     def integer_validator(self, name, value):
         self.name = name
         self.value = value

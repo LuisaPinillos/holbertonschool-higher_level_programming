@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Function that returns True if the object is
-an instance of a class that inherited class
+an instance of inherited class
 otherwise False.
 """
 
