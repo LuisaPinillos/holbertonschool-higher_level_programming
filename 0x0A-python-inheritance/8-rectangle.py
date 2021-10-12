@@ -1,18 +1,21 @@
 #!/usr/bin/python3
 """
-Impor the BaseGeometric
-from class
-7-base_geometry.py
+class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
 """
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Class Rectangle is inherits from
-    BaseGeometry.
     """
+        Type class of Rectangle inherit BaseGeometry
+    """
+
     def __init__(self, width, height):
+        """
+        Constructor Magic method
+        """
+
+        self.integer_validator("width", width)
         self.__width = width
-        self.__height = height
-        self.integer_validator('width', width)
-        self.integer_validator('height', height)
+        self.integer_validator("height", height)
+        self.__heigh = height
