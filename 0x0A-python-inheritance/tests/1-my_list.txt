@@ -10,8 +10,29 @@ Import the add_integer module:
 
 >>> print_sorted = __import__('1-my_list').print_sorted
 
-
-
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(5)
+>>> my_list.append(5)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[2, 3, 5, 5, 5]
+>>> newlst = MyList()
+>>> newlst.append(5555)
+>>> newlst.print_sorted()
+[5555]
+>>> newlst2 = MyList()
+>>> newlst2.append('Hello')
+>>> newlst2.print_sorted()
+['Hello']
+>>> newlst3 = MyList()
+>>> newlst3.append(4.5)
+>>> newlst3.append(1.5)
+>>> newlst3.print_sorted()
+[1.5, 4.5]
+new
 -------------
 Requirements
 -------------
