@@ -33,5 +33,5 @@ class Student():
         return new_dic
 
     def reload_from_json(self, json):
-        for key, value in json.items():
-            self.__dict__[key] = value
+        for i in json:
+            self.__dict__[i] = json[i]
