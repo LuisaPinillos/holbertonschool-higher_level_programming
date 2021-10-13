@@ -10,4 +10,4 @@ def class_to_json(obj):
     """
     Class are serializable
     """
-    return obj.__dic__
+    return obj.__dict__
