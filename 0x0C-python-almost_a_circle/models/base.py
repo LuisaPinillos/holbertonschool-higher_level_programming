@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-
+Create a new class with a
+private class attribute
+__nb_objects
 """
 
 
