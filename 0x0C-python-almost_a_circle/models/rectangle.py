@@ -4,7 +4,12 @@ The class Rectangle that inherits from Base
 Private instance attributes, each with its
 own public getter and setter
 """
+
+
 from models.base import Base
+"""
+Import the base class
+"""
 
 
 class Rectangle(Base):
