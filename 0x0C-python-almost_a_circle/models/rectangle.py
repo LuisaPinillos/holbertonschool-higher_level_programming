@@ -99,5 +99,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """return a string"""
-        return (f"[Rectangle] ({self.__class__.__name__}) {self.x}/{self.y}\
-         - {self.width}/{self.height}")
+        return(f"[Rectangle] \
+({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
