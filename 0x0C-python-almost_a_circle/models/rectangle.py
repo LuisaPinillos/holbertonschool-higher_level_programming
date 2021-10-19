@@ -101,6 +101,7 @@ class Rectangle(Base):
             print("")
 
     def update(self, *args):
+        """add the arguments to the attributes"""
         for x in range(len(args)):
             if x == 0:
                 self.id = args[x]
