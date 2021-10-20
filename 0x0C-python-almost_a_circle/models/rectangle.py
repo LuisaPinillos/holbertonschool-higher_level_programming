@@ -100,19 +100,23 @@ class Rectangle(Base):
                 print("#", end="")
             print("")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """add the arguments to the attributes"""
-        for x in range(len(args)):
-            if x == 0:
-                self.id = args[x]
-            if x == 1:
-                self.__width = args[x]
-            if x == 2:
-                self.__height = args[x]
-            if x == 3:
-                self.__x = args[x]
-            if x == 4:
-                self.__y = args[x]
+        if args:
+            for x in range(len(args)):
+                if x == 0:
+                    self.id = args[x]
+                if x == 1:
+                    self.__width = args[x]
+                if x == 2:
+                    self.__height = args[x]
+                if x == 3:
+                    self.__x = args[x]
+                if x == 4:
+                    self.__y = args[x]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def __str__(self):
         """return a string"""
