@@ -22,6 +22,22 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
         self.size = size
 
+    @property
+    def size(self):
+        """to retrieve it"""
+        return self.__width
+
+    @size.setter
+    def size(self, value):
+        """to set it"""
+
+        if type(value) is not int:
+            raise TypeError("x must be an integer")
+        elif value <= 0:
+            raise ValueError("x must be > 0")
+        self.__width = value
+        self.__height = value
+
     def __str__(self):
         """return a string"""
         return(f"[Square] \
