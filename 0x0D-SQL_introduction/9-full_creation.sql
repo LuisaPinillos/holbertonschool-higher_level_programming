@@ -1,8 +1,8 @@
 -- Script that creates a table second_table in the database hbtn_0c_0
 CREATE TABLE IF NOT EXISTS second_table (
-    id INT,
-    name VARCHAR(256),
-    score INT
+    id INT DEFAULT 0,
+    name VARCHAR(256) DEFAULT NULL,
+    score INT DEFAULT 0
 );
 
 INSERT INTO second_table 
