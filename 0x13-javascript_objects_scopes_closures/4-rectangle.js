@@ -3,7 +3,6 @@
 /* Instance method called rotate() that exchange the width and height
 and the method double that mulpiplies the height and width per 2. */
 
-
 class Rectangle {
   constructor (w, h) {
     if (w <= 0 || h <= 0 || w === undefined || h === undefined) {
