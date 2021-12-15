@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const Rectangle = require('./4-rectangle');
 
-/* Instance method called charPrint(c) that prints the rectangle
+/* Method called charPrint(c) that prints the rectangle
 using the character c */
 
 class Square extends Rectangle {
