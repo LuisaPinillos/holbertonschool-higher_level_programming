@@ -10,14 +10,11 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
+    c = c || 'X'
     let string1 = '';
     for (let i = 0; i < this.height; i++) {
       for (let j = 0; j < this.width; j++) {
-        if (c === undefined) {
-          string1 += 'X';
-        } else {
           string1 += c;
-        }
       }
       if (i + 1 !== this.height) {
         string1 += '\n';
