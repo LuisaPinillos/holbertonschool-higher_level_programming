@@ -9,5 +9,5 @@ if (parseInt(process.argv[2])) {
   }
   console.log(fact);
 } else {
-  console.log(1);
+  console.log('1');
 }
