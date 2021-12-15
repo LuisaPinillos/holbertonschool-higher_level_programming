@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
 // Script that computes and prints a factorial.
+const { argv } = require('process');
 
 if (parseInt(process.argv[2])) {
   let fact = 1;
