@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-/* Instance method called charPrint(c) that prints the rectangle
+/* Instance method called charPrint(c) that prints the rectangle 
 using the character c */
 
 class Square extends require('./5-square') {
@@ -8,20 +8,17 @@ class Square extends require('./5-square') {
     super(size, size);
   }
 
-  charPrint (c) {
+  charPrint(c) {
+    c = c || 'X';
     let string1 = '';
     for (let i = 0; i < this.height; i++) {
       for (let j = 0; j < this.width; j++) {
-        if (c === undefined) {
-          string1 += 'X';
-        } else {
-          string1 += 'C';
-        }
+        string1 += c;
       }
       if (i + 1 !== this.height) {
         string1 += '\n';
       }
-    }
+      }
     console.log(string1);
   }
 }
