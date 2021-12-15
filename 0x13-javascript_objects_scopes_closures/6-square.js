@@ -4,7 +4,6 @@
 using the character c */
 
 class Square extends require('./5-square') {
-
   charPrint (c) {
     c = c || 'X';
     let string1 = '';
