@@ -4,9 +4,6 @@
 using the character c */
 
 class Square extends require('./5-square') {
-  constructor (size) {
-    super(size, size);
-  }
 
   charPrint (c) {
     c = c || 'X';
