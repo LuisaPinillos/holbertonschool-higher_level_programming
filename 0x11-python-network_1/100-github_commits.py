@@ -15,8 +15,7 @@ if __name__ == "__main__":
     url += 'commits?per_page=10'
     req = requests.get(url)
     for i in req.json():
-
         print("{}: {}".format(i.get("sha"
-                                    ) i.get("commit"
+                                    ), i.get("commit"
                                             ).get("author"
                                                   ).get("name")))
