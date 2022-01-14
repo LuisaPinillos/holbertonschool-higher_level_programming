@@ -17,5 +17,5 @@ if __name__ == "__main__":
     for i in req.json():
         print("{}: {}".format(i.get("sha"
                                     ), i.get("commit"
-                                            ).get("author"
-                                                  ).get("name")))
+                                             ).get("author"
+                                                   ).get("name")))
