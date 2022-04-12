@@ -4,10 +4,10 @@
 
 const listArgs = process.argv.length;
 
-if (listArgs >= 2) {
+if (listArgs <= 3) {
+  console.log(0);
+} else {
   const listOrder = process.argv.sort();
   const secMax = listOrder.reverse()[1];
   console.log(secMax);
-} else {
-  console.log(0);
 }
