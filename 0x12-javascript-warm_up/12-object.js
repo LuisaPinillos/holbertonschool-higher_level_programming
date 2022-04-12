@@ -8,7 +8,5 @@ const myObject = {
 };
 console.log(myObject);
 
-if (myObject.value === 12) {
-  myObject.value = 89;
-}
+myObject.value = 89;
 console.log(myObject);
