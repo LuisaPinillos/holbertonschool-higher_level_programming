@@ -4,7 +4,7 @@
 
 const listArgs = process.argv.length;
 
-if (listArgs >= 3) {
+if (listArgs >= 2) {
   const listOrder = process.argv.sort();
   const secMax = listOrder.reverse()[1];
   console.log(secMax);
